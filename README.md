@@ -62,8 +62,12 @@ http://127.0.0.1:3000
 - **Request Body**:
   ```json
   {
-    "email": "jhony@example.net",
-    "password": "password"
+	"message": "Signed in successfully.",
+	"token": "eyJ1c2VyX2lkIjoxLCJleHAiOjE3Mjg4MTI0ODh9\n",
+	"user": {
+		"id": 1,
+		"email": "jhony@example.net"
+	}
   }
   ```
 
@@ -145,7 +149,18 @@ http://127.0.0.1:3000
 All requests must include the following headers:
 
 - `Content-Type`: `application/json`
-- `User-Agent`: `insomnia/10.0.0`
+
+=================================================
+
+* HEADER ADDITIONAL CONFIGURATION
+
+- Activate and Choose Bearer Token and enter the token generated from login in Auth Tab of API Request in Insomnia 
+
+==== OR ====
+
+- `Authorization`: `Bearer <TOKEN FROM LOGIN>`
+
+=================================================
 
 ## Notes
 
