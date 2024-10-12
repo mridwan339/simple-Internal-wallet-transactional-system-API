@@ -19,8 +19,10 @@ for start the server
 ## Prerequisites
 
 === Minimum Requirement ===
+
 - Ruby Version ruby 3.0.0p0 and Rails 7.1.4 Version
 - Database : PostgreSQL 16
+
 ============||=============
 
 - Ensure you have Insomnia installed. If not, download it from [Insomnia's official website](https://insomnia.rest/download)
