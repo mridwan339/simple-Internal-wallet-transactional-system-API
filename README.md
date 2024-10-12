@@ -1,5 +1,5 @@
 # Step for Start
-
+- bundle install
 - rails db:setup
 for initialize / install and migration database and seed
 
