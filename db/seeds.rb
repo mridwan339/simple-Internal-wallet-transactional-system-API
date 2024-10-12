@@ -1,0 +1,6 @@
+User.create!(name: 'Jhony', email: 'jhony@example.net', password_salt: 'abcd1234', password_hash: Digest::SHA256.hexdigest('abcd1234' + 'password'))
+User.create!(name: 'Udin', email: 'udin@example.net', password_salt: 'abcd1234', password_hash: Digest::SHA256.hexdigest('abcd1234' + 'password'))
+User.create!(name: 'Bean', email: 'bean@example.net', password_salt: 'abcd1234', password_hash: Digest::SHA256.hexdigest('abcd1234' + 'password'))
+Wallet.create!(owner: User.first, balance: 1000.00)
+Wallet.create!(owner: User.second, balance: 0.00)
+Wallet.create!(owner: User.third, balance: 3000.00)
